@@ -51,14 +51,6 @@
 
 > Cada pasta tem seu próprio README explicando o conteúdo.
 
-## 🌐 O que é o GitHub Pages
-
-O **GitHub Pages** é um serviço gratuito do GitHub que publica sites direto de um repositório. Os arquivos HTML, CSS e JavaScript ficam no repositório, e o GitHub gera um endereço público onde qualquer pessoa pode abrir a página no navegador.
-
-- **Para que serve:** publicar portfólios, páginas de projetos e documentação, sem pagar hospedagem nem configurar servidor.
-- **Como atualiza:** a cada `git push`, o site é atualizado sozinho.
-- **Limitação:** serve apenas sites estáticos. Não roda código de servidor nem banco de dados.
-- **Neste projeto:** o Pages publica o `index.html`, que reúne meus trabalhos e abre os PDFs e imagens direto no navegador.
 
 ## 🗂️ Estrutura do repositório
 
