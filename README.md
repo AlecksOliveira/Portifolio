@@ -13,8 +13,6 @@
 </p>
 
 <p align="center">
-  <a href="https://alecksoliveira.github.io/Portifolio/"><b>🌐 Ver o portfólio online</b></a>
-  &nbsp;•&nbsp;
   <a href="https://github.com/AlecksOliveira">GitHub</a>
   &nbsp;•&nbsp;
   <a href="https://www.linkedin.com/in/AlecksOliveira">LinkedIn</a>
