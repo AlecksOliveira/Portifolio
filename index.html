@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alecksander Ramos de Oliveira | Portfólio</title>
+<meta name="description" content="Portfólio de projetos acadêmicos e pessoais de Alecksander Ramos de Oliveira, com modelagens de banco de dados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #eef2f7;
+  --surface: #ffffff;
+  --ink: #12263f;
+  --muted: #475a70;
+  --line: #c4d0de;
+  --grid: rgba(18, 38, 63, 0.06);
+  --accent: #0b6f78;
+  --key: #9a6410;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0e1726;
+    --surface: #15233a;
+    --ink: #e6ecf5;
+    --muted: #9db0c8;
+    --line: #2a3d5a;
+    --grid: rgba(230, 236, 245, 0.05);
+    --accent: #5cc8d2;
+    --key: #e5b85c;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1rem; }
+body {
+  margin: 0;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
+
+.hero { padding: 4.5rem 0 3.5rem; }
+.hero .wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+h1 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+}
+.lede { max-width: 34rem; margin: 0; color: var(--muted); font-size: 1.15rem; }
+
+.entity {
+  background: var(--surface);
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-shadow: 6px 6px 0 var(--line);
+}
+.entity h2 {
+  margin: 0;
+  padding: 0.6rem 1rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.entity dl { margin: 0; }
+.entity .row {
+  display: grid;
+  grid-template-columns: 6.2rem 1fr;
+  gap: 0.75rem;
+  padding: 0.55rem 1rem;
+  border-top: 1px solid var(--line);
+}
+.entity .row:first-child { border-top: 0; }
+.entity dt { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); }
+.entity dt .pk { color: var(--key); font-weight: 700; margin-right: 0.35rem; }
+.entity dd { margin: 0; overflow-wrap: anywhere; }
+
+main section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+h3 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem;
+}
+.sub { margin: 0 0 1.5rem; color: var(--muted); max-width: 42rem; }
+
+.table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+table { width: 100%; border-collapse: collapse; min-width: 34rem; }
+th, td { text-align: left; padding: 0.8rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--mono); font-size: 0.85rem; font-weight: 600; color: var(--muted); background: var(--paper); }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; }
+.tag { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); }
+
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 6px; padding: 1.25rem 1.5rem; color: var(--muted); }
+
+pre {
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+footer { padding: 2rem 0 3rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+
+@media (max-width: 760px) {
+  .hero { padding: 2.5rem 0 2rem; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 2rem; }
+  .entity .row { grid-template-columns: 1fr; gap: 0.1rem; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Alecksander Ramos de Oliveira</h1>
+      <p class="lede">Portfólio de projetos acadêmicos e pessoais. Hoje reúne as modelagens de banco de dados feitas na faculdade.</p>
+    </div>
+    <div class="entity" role="group" aria-label="Dados do aluno">
+      <h2>aluno</h2>
+      <dl>
+        <div class="row"><dt><span class="pk">PK</span>Matricula</dt><dd>22653359</dd></div>
+        <div class="row"><dt>nome</dt><dd>Alecksander Ramos de Oliveira</dd></div>
+        <div class="row"><dt>curso</dt><dd>Engenharia de Software</dd></div>
+        <div class="row"><dt>github</dt><dd><a href="https://github.com/AlecksOliveira">github.com/AlecksOliveira</a></dd></div>
+        <div class="row"><dt>linkedin</dt><dd><a href="https://www.linkedin.com/in/AlecksOliveira">linkedin.com/in/SEU-PERFIL</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="academicos" class="wrap">
+    <h3>Projetos acadêmicos: Banco de Dados</h3>
+    <p class="sub">Modelos conceituais, modelos lógicos e exercícios da disciplina. Cada arquivo abre direto no navegador.</p>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr" style="position:absolute;left:-9999px">Projetos de Banco de Dados</caption>
+        <thead>
+          <tr><th scope="col">projeto</th><th scope="col">formato</th><th scope="col">arquivo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ecossistema iFood</td><td class="tag">pdf</td><td><a href="projetos-academicos/banco-de-dados/Atividade_ecossistema_ifood_AlecksanderRamosDeOliveira.pdf">Abrir PDF</a></td></tr>
+          <tr><td>Modelo conceitual (BRMW)</td><td class="tag">pdf</td><td><a href="projetos-academicos/banco-de-dados/Conceptual%20model%20-%20BRMW.pdf">Abrir PDF</a></td></tr>
+          <tr><td>Modelo de academia</td><td class="tag">pdf</td><td><a href="projetos-academicos/banco-de-dados/Modelo_Academia_AlecksanderRamosDeOliveira.pdf">Abrir PDF</a></td></tr>
+          <tr><td>Modelo de hospital</td><td class="tag">pdf</td><td><a href="projetos-academicos/banco-de-dados/Modelo_hospital_AlecksanderOliveira.pdf">Abrir PDF</a></td></tr>
+          <tr><td>Exercício de hospital</td><td class="tag">pdf</td><td><a href="projetos-academicos/banco-de-dados/exercicio_hospital_AlecksanderRamosDeOliveira.pdf">Abrir PDF</a></td></tr>
+          <tr><td>Modelo de petshop</td><td class="tag">png</td><td><a href="projetos-academicos/banco-de-dados/modelo_petshop_Alecksander_ramos_de_oliveira.png">Abrir imagem</a></td></tr>
+          <tr><td>Atividade</td><td class="tag">png</td><td><a href="projetos-academicos/banco-de-dados/Alecksander_Oliveira_atividade.png">Abrir imagem</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="pessoais" class="wrap">
+    <h3>Projetos pessoais</h3>
+    <p class="empty">Nenhum projeto pessoal publicado ainda. Adicione uma pasta em <code>projetos-pessoais/</code> e uma linha aqui.</p>
+  </section>
+
+  <section id="estrutura" class="wrap">
+    <h3>Como o repositório está organizado</h3>
+    <p class="sub">Uma pasta por área, e um README em cada projeto explicando o conteúdo.</p>
+<pre>portfolio/
+├── index.html
+├── README.md
+├── projetos-academicos/
+│   └── banco-de-dados/
+├── projetos-pessoais/
+└── documentacao/</pre>
+    <p class="sub" style="margin-top:1.25rem">Código-fonte e histórico de versões: <a href="https://github.com/AlecksOliveira/portfolio">github.com/AlecksOliveira/portfolio</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Versão 1.0. Publicado com GitHub Pages.</div>
+</footer>
+</body>
+</html>

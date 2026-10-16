@@ -1,27 +1,40 @@
-# Banco de Dados
+# Portfólio de Alecksander Ramos de Oliveira
 
-Repositório com as atividades e modelagens da disciplina de **Banco de Dados**.
+Repositório que reúne meus projetos acadêmicos e pessoais, versionados com Git e publicados com GitHub Pages.
+
+- **Página do portfólio:** https://alecksoliveira.github.io/portfolio/
+- **GitHub:** https://github.com/AlecksOliveira
+- **LinkedIn:** https://www.linkedin.com/in/SEU-PERFIL
 
 ## Identificação
 
 - **Aluno:** Alecksander Ramos de Oliveira
 - **Matrícula:** _preencher_
 - **Curso:** _preencher_
-- **Disciplina:** Banco de Dados
-- **Professor(a):** _preencher_
 
-## Conteúdo
+## Estrutura do repositório
 
-| Atividade | Tipo | Arquivo |
-|-----------|------|---------|
-| Ecossistema iFood | PDF | [Atividade_ecossistema_ifood_AlecksanderRamosDeOliveira.pdf](Atividade_ecossistema_ifood_AlecksanderRamosDeOliveira.pdf) |
-| Modelo conceitual (BRMW) | PDF | [Conceptual model - BRMW.pdf](Conceptual%20model%20-%20BRMW.pdf) |
-| Modelo Academia | PDF | [Modelo_Academia_AlecksanderRamosDeOliveira.pdf](Modelo_Academia_AlecksanderRamosDeOliveira.pdf) |
-| Modelo Hospital | PDF | [Modelo_hospital_AlecksanderOliveira.pdf](Modelo_hospital_AlecksanderOliveira.pdf) |
-| Exercício Hospital | PDF | [exercicio_hospital_AlecksanderRamosDeOliveira.pdf](exercicio_hospital_AlecksanderRamosDeOliveira.pdf) |
-| Modelo Petshop | Imagem | [modelo_petshop_Alecksander_ramos_de_oliveira.png](modelo_petshop_Alecksander_ramos_de_oliveira.png) |
-| Atividade | Imagem | [Alecksander_Oliveira_atividade.png](Alecksander_Oliveira_atividade.png) |
+```
+portfolio/
+├── index.html                 Página do GitHub Pages
+├── README.md                  Este arquivo
+├── projetos-academicos/
+│   └── banco-de-dados/        Modelagens e exercícios de Banco de Dados
+├── projetos-pessoais/         Projetos fora da faculdade
+└── documentacao/              Documentos de apoio
+```
+
+## Projetos
+
+| Área | Projeto | Descrição |
+|------|---------|-----------|
+| Acadêmico | [Banco de Dados](projetos-academicos/banco-de-dados/) | Modelos conceituais e exercícios: iFood, hospital, academia e petshop |
+| Pessoal | [Projetos pessoais](projetos-pessoais/) | Em breve |
+
+## Versionamento
+
+O projeto segue versionamento com Git. A primeira entrega da página está marcada como **v1.0**. Novas alterações são enviadas com `git add`, `git commit` e `git push`.
 
 ## Como visualizar
 
-Basta clicar no nome do arquivo na tabela acima ou na lista de arquivos do repositório. O GitHub abre PDFs e imagens direto no navegador.
+Acesse a página do portfólio pelo link acima, ou navegue pelas pastas aqui no GitHub.
