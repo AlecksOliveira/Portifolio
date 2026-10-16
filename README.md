@@ -15,7 +15,7 @@ Repositório que reúne meus projetos acadêmicos e pessoais, versionados com Gi
 
 ## Estrutura do repositório
 
-```
+```text
 portfolio/
 ├── index.html
 ├── README.md
@@ -28,20 +28,19 @@ portfolio/
 │   └── Lógica-da-Programação/
 ├── projetos-pessoais/
 └── documentacao/
+```
 
-## Projetos
 
 ## Projetos
 
 | Área | Projeto | Descrição |
 |------|---------|-----------|
-| Acadêmico | [Banco de Dados](projetos-academicos/banco-de-dados/) | Modelagem de dados, diagramas e exercícios SQL. |
-| Acadêmico | [Bootcamp I](projetos-academicos/Boot-camp-I/) | Atividades práticas e desenvolvimento de projetos. |
-| Acadêmico | [Engenharia de Software](projetos-academicos/Engenharia-de-Software/) | Processos de software, metodologias ágeis e desenvolvimento de sistemas. |
-| Acadêmico | [Fundamentos da Engenharia](projetos-academicos/Fundamentos-da-Engenharia/) | Conceitos fundamentais, cálculos e aplicações da engenharia. |
-| Acadêmico | [Introdução à Computação](projetos-academicos/Introdução-à-computação/) | Fundamentos da computação, hardware e software. |
-| Acadêmico | [Lógica da Programação](projetos-academicos/Lógica-da-Programação/) | Algoritmos, estruturas condicionais e lógica computacional. |
-| Pessoal | [Projetos pessoais](projetos-pessoais/) | Em breve. |
+| Acadêmico | [Banco de Dados](projetos-academicos/banco-de-dados/) | Modelagem de dados e SQL. |
+| Acadêmico | [Bootcamp I](projetos-academicos/Boot-camp-I/) | Atividades e projetos práticos. |
+| Acadêmico | [Engenharia de Software](projetos-academicos/Engenharia-de-Software/) | Processos e metodologias de desenvolvimento. |
+| Acadêmico | [Fundamentos da Engenharia](projetos-academicos/Fundamentos-da-Engenharia/) | Conceitos fundamentais da engenharia. |
+| Acadêmico | [Introdução à Computação](projetos-academicos/Introdução-à-computação/) | Fundamentos de hardware e software. |
+| Acadêmico | [Lógica da Programação](projetos-academicos/Lógica-da-Programação/) | Algoritmos e lógica computacional. |
 
 ## Versionamento
 
