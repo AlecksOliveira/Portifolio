@@ -116,6 +116,25 @@ tr:last-child td { border-bottom: 0; }
 td:first-child { font-weight: 600; }
 .tag { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); }
 
+h4 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 2.25rem 0 0.6rem;
+  scroll-margin-top: 1rem;
+}
+.subjects { list-style: none; margin: 0 0 0.5rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.subjects a {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.subjects a:hover { border-color: var(--accent); }
 .empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 6px; padding: 1.25rem 1.5rem; color: var(--muted); }
 
 pre {
@@ -143,7 +162,7 @@ footer { padding: 2rem 0 3rem; border-top: 1px solid var(--line); color: var(--m
   <div class="wrap">
     <div>
       <h1>Alecksander Ramos de Oliveira</h1>
-      <p class="lede">Portfólio de projetos acadêmicos e pessoais. Hoje reúne as modelagens de banco de dados feitas na faculdade.</p>
+      <p class="lede">Portfólio de projetos acadêmicos e pessoais. Hoje reúne os trabalhos das disciplinas da faculdade.</p>
     </div>
     <div class="entity" role="group" aria-label="Dados do aluno">
       <h2>aluno</h2>
@@ -152,7 +171,7 @@ footer { padding: 2rem 0 3rem; border-top: 1px solid var(--line); color: var(--m
         <div class="row"><dt>nome</dt><dd>Alecksander Ramos de Oliveira</dd></div>
         <div class="row"><dt>curso</dt><dd>Engenharia de Software</dd></div>
         <div class="row"><dt>github</dt><dd><a href="https://github.com/AlecksOliveira">github.com/AlecksOliveira</a></dd></div>
-        <div class="row"><dt>linkedin</dt><dd><a href="https://www.linkedin.com/in/AlecksOliveira">linkedin.com/in/SEU-PERFIL</a></dd></div>
+        <div class="row"><dt>linkedin</dt><dd><a href="https://www.linkedin.com/in/AlecksOliveira">linkedin.com/in/AlecksOliveira</a></dd></div>
       </dl>
     </div>
   </div>
@@ -160,8 +179,70 @@ footer { padding: 2rem 0 3rem; border-top: 1px solid var(--line); color: var(--m
 
 <main>
   <section id="academicos" class="wrap">
-    <h3>Projetos acadêmicos: Banco de Dados</h3>
-    <p class="sub">Modelos conceituais, modelos lógicos e exercícios da disciplina. Cada arquivo abre direto no navegador.</p>
+    <h3>Projetos acadêmicos</h3>
+    <p class="sub">Uma seção por matéria. Cada arquivo abre direto no navegador.</p>
+    <ul class="subjects">
+      <li><a href="#boot-camp-i">Boot-camp I</a></li>
+      <li><a href="#engenharia-de-software">Engenharia de Software</a></li>
+      <li><a href="#introducao-a-computacao">Introdução à Computação</a></li>
+      <li><a href="#logica-da-programacao">Lógica da Programação</a></li>
+      <li><a href="#banco-de-dados">Banco de Dados</a></li>
+    </ul>
+
+    <h4 id="boot-camp-i">Boot-camp I</h4>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr" style="position:absolute;left:-9999px">Projetos de Boot-camp I</caption>
+        <thead>
+          <tr><th scope="col">projeto</th><th scope="col">formato</th><th scope="col">arquivo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Entrega etapa inicial</td><td class="tag">pdf</td><td><a href="projetos-academicos/Boot-camp-l/Entrega%20Etapa%20Inicial%20.pdf">Abrir PDF</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="engenharia-de-software">Engenharia de Software</h4>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr" style="position:absolute;left:-9999px">Projetos de Engenharia de Software</caption>
+        <thead>
+          <tr><th scope="col">projeto</th><th scope="col">formato</th><th scope="col">arquivo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Modelagem de sistemas</td><td class="tag">pdf</td><td><a href="projetos-academicos/Engenharia-de-Software/MODELAGEM%20DE%20SISTEMAS-%20ALECKSANDER.pdf">Abrir PDF</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="introducao-a-computacao">Introdução à Computação</h4>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr" style="position:absolute;left:-9999px">Projetos de Introdução à Computação</caption>
+        <thead>
+          <tr><th scope="col">projeto</th><th scope="col">formato</th><th scope="col">arquivo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Seminário 1: dispositivos de armazenamento</td><td class="tag">pdf</td><td><a href="projetos-academicos/Introdu%C3%A7%C3%A3o-%C3%A0-computa%C3%A7%C3%A3o/Seminario_1_Dispositivos_Armazenamento.pdf">Abrir PDF</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="logica-da-programacao">Lógica da Programação</h4>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr" style="position:absolute;left:-9999px">Projetos de Lógica da Programação</caption>
+        <thead>
+          <tr><th scope="col">projeto</th><th scope="col">formato</th><th scope="col">arquivo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lógica da programação</td><td class="tag">pdf</td><td><a href="projetos-academicos/L%C3%B3gica-da-Programa%C3%A7%C3%A3o/L%C3%B3gica%20da%20programa%C3%A7%C3%A3o.pdf">Abrir PDF</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="banco-de-dados">Banco de Dados</h4>
+    <p class="sub">Modelos conceituais, modelos lógicos e exercícios da disciplina.</p>
     <div class="table-wrap">
       <table>
         <caption class="sr" style="position:absolute;left:-9999px">Projetos de Banco de Dados</caption>
@@ -193,10 +274,14 @@ footer { padding: 2rem 0 3rem; border-top: 1px solid var(--line); color: var(--m
 ├── index.html
 ├── README.md
 ├── projetos-academicos/
+│   ├── Boot-camp-l/
+│   ├── Engenharia-de-Software/
+│   ├── Introdução-à-computação/
+│   ├── Lógica-da-Programação/
 │   └── banco-de-dados/
 ├── projetos-pessoais/
 └── documentacao/</pre>
-    <p class="sub" style="margin-top:1.25rem">Código-fonte e histórico de versões: <a href="https://github.com/AlecksOliveira/portfolio">github.com/AlecksOliveira/portfolio</a></p>
+    <p class="sub" style="margin-top:1.25rem">Código-fonte e histórico de versões: <a href="https://github.com/AlecksOliveira/Portifolio">github.com/AlecksOliveira/Portifolio</a></p>
   </section>
 </main>
 

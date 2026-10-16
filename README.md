@@ -4,7 +4,7 @@ Repositório que reúne meus projetos acadêmicos e pessoais, versionados com Gi
 
 - **Página do portfólio:** https://alecksoliveira.github.io/portfolio/
 - **GitHub:** https://github.com/AlecksOliveira
-- **LinkedIn:** https://www.linkedin.com/in/SEU-PERFIL
+- **LinkedIn:** https://www.linkedin.com/in/AlecksOliveira
 
 ## Identificação
 
