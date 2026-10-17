@@ -15,7 +15,7 @@
 <p align="center">
   <a href="https://github.com/AlecksOliveira">GitHub</a>
   &nbsp;•&nbsp;
-  <a href="https://www.linkedin.com/in/AlecksOliveira">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/AlecksOliveiraa">LinkedIn</a>
 </p>
 
 ---
